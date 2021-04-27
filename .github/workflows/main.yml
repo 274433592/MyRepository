@@ -33,7 +33,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Set up Docker Buildx
         id: buildx
-        uses: docker/build-buildx-action@v1
+        uses: docker/setup-buildx-action@v1
         
       - name: Build and push
         id: docker_build
